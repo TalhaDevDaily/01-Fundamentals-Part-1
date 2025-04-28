@@ -35,6 +35,4 @@ const description =
   " people speak " +
   language;
 
-console.log(description);
-
 // Operator Precedence
