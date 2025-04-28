@@ -1,7 +1,7 @@
 // Variables and Values
 const country = "Bangladesh";
 const continent = "Asia";
-const population = 171500000;
+let population = 180000000;
 
 // Data Types
 const isIsland = false;
@@ -16,3 +16,25 @@ language = "Bangla";
 // continent = "Europe";
 
 // Basic Operators
+population /= 2;
+population++;
+console.log(population);
+
+let finlandPopulation = 6000000;
+console.log(population > finlandPopulation);
+
+let averagePopulation = 33000000;
+console.log(population < averagePopulation);
+
+const description =
+  country +
+  " is in " +
+  continent +
+  " and it's " +
+  population +
+  " people speak " +
+  language;
+
+console.log(description);
+
+// Operator Precedence
