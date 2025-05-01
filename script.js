@@ -1,5 +1,5 @@
 /*
-// Variables and Values
+//// Variables and Values
 let js = "amazing";
 if (js === "amazing") alert("Javascript is FUN!");
 
@@ -13,7 +13,7 @@ console.log(firstName);
 */
 
 /*
-// Data Types
+//// Data Types
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -35,7 +35,7 @@ console.log(typeof null);
 */
 
 /*
-// let, const and var
+//// let, const and var
 let age = 30;
 age = 31;
 
@@ -52,7 +52,7 @@ console.log(lastName);
 */
 
 /*
-// Basic Operators
+//// Basic Operators
 
 // Math Operators
 const now = 2037;
@@ -77,7 +77,7 @@ x++; // x = x + 1 = 41
 x--; // x = x - 1 = 40
 console.log(x);
 
-// Comparison Operators
+//// Comparison Operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 
@@ -86,7 +86,8 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
-// Operator Precedence
+/*
+//// Operator Precedence
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -99,3 +100,127 @@ console.log(x, y);
 
 averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+/*
+//// Strings and Template Literals
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+console.log(jonas);
+
+// Template Literals/ Template Strings
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String
+    multiple
+lines`);
+*/
+
+/*
+//// Taking Decisions: if / else Statements
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (age >= 18) {
+  console.log("Sarah can start driving license 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too yourng. Wait another ${yearsLeft} years :)`);
+}
+
+// Variable inside of a code block will not execute outside of the code block
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+/*
+//// Type Conversion and Coercion
+// Type Conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jesus"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type Coercion
+console.log("I am " + 23 + " years old");
+console.log(`I am ${23} years old`);
+console.log("I am " + "23" + " years old");
+// they all work like this
+console.log("I am " + String(23) + " years old");
+
+console.log("23" + "10" + 3); //23103
+console.log("23" - "10" - 3); // 10
+
+console.log("23" * "2"); // 46
+console.log("23" / "2"); // 11.5
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n); // 10
+
+console.log(2 + 3 + 4 + "5"); // 95
+console.log("10" - "4" - "3" - 2 + "5"); // 15
+*/
+
+/*
+//// Truthly and Falsly Values
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+console.log(Boolean(``));
+
+const money = 0;
+if (money) {
+  console.log(`Don't spend it all ;)`);
+} else {
+  console.log(`You should get a job!`);
+}
+
+let height; // even if you put height = 0
+if (height) {
+  console.log(`YAY! Height is defined`);
+} else {
+  console.log(`Height is UNDEFINED`);
+}
+*/
+
+/*
+//// Equality Operators: == vs ===
+const age = `18`;
+if (age === 18) console.log(`You just became an adult :D (strict)`); // False
+if (age == 18) console.log(`You just became an adult :D (loose)`); // True
+
+const favourite = Number(prompt(`What's your favourite number?`));
+console.log(favourite); // 23 === 23 = true | 22 === 23 = false
+console.log(typeof favourite);
+
+if (favourite === 23) console.log(`Cool! ${favourite} is an amazing number!`);
+else if (favourite === 7) console.log(`${favourite} is also a cool numer!`);
+else if (favourite === 9) console.log(`${favourite} is also a cool numer!`);
+else console.log(`Number is not 23 or 7 or 9`);
+
+if (favourite !== 23) console.log(`Why not the 23?`);
+*/
