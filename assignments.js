@@ -51,4 +51,15 @@ console.log(3 + +"3"); // 6
 console.log(3 + Number("3")); // 6
 console.log(typeof 3 + ""); // Unary version of String(3)
 
+/*
 //// Equality Operators: == vs ===
+const numNeighbours = Number(
+  prompt(`How many neighbour countries does your country
+have?`)
+);
+if (numNeighbours === 1) console.log(`Only ${numNeighbours} border!`);
+else if (numNeighbours > 1) console.log(`More than 1 border`);
+else console.log(`No borders`);
+// Using === strict equality helped check if both the value and the data type are number and numeric 1 respectively, where as the loose equality wasn't checking if the data type was a number or not, it was just making sure to validate the string '1' into the right answer no matter it's data type.
+// Converting the data type into number using Number() function helped as both the data type and the value is a numeric, which help along side with the strict equalitys' === validation.
+*/
