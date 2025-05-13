@@ -63,3 +63,37 @@ else console.log(`No borders`);
 // Using === strict equality helped check if both the value and the data type are number and numeric 1 respectively, where as the loose equality wasn't checking if the data type was a number or not, it was just making sure to validate the string '1' into the right answer no matter it's data type.
 // Converting the data type into number using Number() function helped as both the data type and the value is a numeric, which help along side with the strict equalitys' === validation.
 */
+
+//// Logical Operators
+if (language === "English" && population < 50000000 && isIsland)
+  console.log(`You should live in ${country} :)`);
+else console.log(`${country} does not meet your criteria :(`);
+
+//// The swtich Statement
+switch (language) {
+  case "chinese":
+  case "mandarin":
+    console.log(`MOST number of native speakers!`);
+    break;
+  case "spanish":
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case "english":
+    console.log(`3rd place`);
+    break;
+  case "hindi":
+    console.log(`Number 4`);
+    break;
+  case "arabic":
+    console.log(`5th most spoken language`);
+    break;
+  default:
+    console.log(`Great language too :D`);
+}
+
+//// The Conditional (Ternary) Operation
+console.log(
+  `${country}'s population is ${
+    population > 33000000 ? `above` : "below"
+  } average`
+);
